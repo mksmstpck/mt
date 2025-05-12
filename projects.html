@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project_style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="" class="logo">
+                    <h1 >SV</h1>
+                </a>
+                <a href="#" class="toggleNav">
+                    <i class="fa fa-align-justify" title="Align Justify"> Меню</i>
+                </a>
+                <ul class="menu">
+                    <li class="item nav"><a href="index.html">Про мене</a></li>
+                    <li class="item nav"><a href="index.html#scill">Мої вміння</a></li>
+                    <li class="item nav"><a href="projects.html">Мої проекти</a></li>
+                    <li class="item icon"> 
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="item icon">
+                        <a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="item icon">
+                        <a href="https://www.youtube.com/">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div class="projects">
+                <h1 class="name">Проекти</h1>
+
+                <div class="card">
+                    <div class="card_img">
+                        <img src="img/16178365.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h1 class="name pr"> PogodkaPyBot</h1>
+                        <p class="info">Один із моїх проєктів — це телеграм-бот, який повідомляє користувачеві актуальну погоду у зручному форматі. Я розробив його як приклад практичного застосування програмування, де поєднується робота з API, обробка повідомлень і форматування відповідей. Бот вміє визначати погоду за вказаним містом, показує температуру, вологість, вітер та короткий опис стану погоди. Його можна використовувати як частину навчального прикладу, щоб показати учням, як програмування може вирішувати реальні задачі.
+
+                            У процесі створення я використав мову програмування Python та бібліотеку python-telegram-bot для взаємодії з Telegram API, а також OpenWeatherMap API для отримання метеоданих. Особливу увагу приділив зручності користування: бот не вимагає складних команд, працює швидко і реагує на прості запити. Цей проєкт допоміг мені не лише прокачати навички роботи з API та мережевими запитами, а й зрозуміти, як створювати інтерфейс, зручний для звичайного користувача. У майбутньому планую розширити його можливості — додати прогноз на кілька днів, геолокацію та підтримку кількох мов.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                        <img src="img/download.png" alt="">
+                    </div>
+                    <div class="content b">
+                        <h1 class="name prb">MovieGarden</h1>
+                        <p class="info">Один із моїх проєктів — це сайт для перегляду фільмів, де я реалізував повноцінну backend-частину за допомогою мови Go (Golang). Метою було створити простий, швидкий і зручний сервіс, який дозволяє користувачам переглядати фільми онлайн, зберігати обране та залишати відгуки. Сайт має авторизацію, систему користувачів, базу даних для зберігання інформації про фільми та інтеграцію з API для завантаження описів, постерів і рейтингів.
+
+                            Backend написано з використанням Gorilla Mux для маршрутизації, GORM для роботи з базою даних та JWT для аутентифікації. Я зробив акцент на швидкості відповіді сервера, правильній структурі проєкту та зручному REST API, який у майбутньому легко масштабувати. Цей проєкт дав мені глибше розуміння побудови веб-сервісів на Go та особливостей роботи з потоками, кешуванням і безпекою. Працюю над тим, щоб додати адаптивну фронтенд-частину та фільтрацію фільмів за жанрами, рейтингом і новизною.</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer_cont">
+                <h1>Maksym Ostapchuk</h1>
+                <ul class="link">
+                    <li class="item"><a href="index.html">Про мене</a></li>
+                    <li class="item"><a href="index.html#scill">Мої вміння</a></li>
+                    <li class="item"><a href="projects.html">Мої проекти</a></li>
+                </ul>
+                <ul class="icon">
+                    <li class="item"> 
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="https://www.youtube.com/">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </footer>
+        
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+            $('.toggleNav').on('click',function() {
+            $('nav .menu').toggleClass('open');
+            });
+            });
+        </script>
+</body>
+</html>
